@@ -7,3 +7,22 @@ localStorage.setItem("math",value);
 localStorage.setItem("science",value);
 localStorage.setItem("english",value);
 localStorage.setItem("history",value);
+
+/*how to view value from local storage*/
+
+console.log(localStorage.getItem("marks"));
+console.log(localStorage.getItem("math"));
+console.log(localStorage.getItem("science"));
+console.log(localStorage.getItem("english"));
+console.log(localStorage.getItem("history"));
+
+/*how to crate button by one click show the result*/
+const showresult = () => {
+    console.log("Hello World");
+}
+
+/*when click the button value will be save the local storage*/
+
+const saveToLocalStorage=()=>{
+    localStorage.setItem("HighScore","96");
+}
