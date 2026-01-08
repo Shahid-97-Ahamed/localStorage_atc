@@ -3,22 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>addToCart</title>
+    <!-- daisyUI links -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
+    <!-- for parctice -->
+<!-- <button onclick="showresult()">Show Result</button>
+
+<button onclick="saveToLocalStorage()">localStorage</button> -->
+
+<!-- Add To Cart -->
+
+    <!-- Card Container -->
+<div class="min-h-screen bg-blue-100 flex items-center justify-center">
+  <div class="card w-96 bg-base-100 shadow-xl text-center">
+    <div class="card-body">
+      <h1 class="card-title text-2xl justify-center">Add To Cart</h1>
+
+      <input
+        type="text"
+        id="product-name"
+        placeholder="Product Name"
+        class="input input-bordered w-full"
+      />
+
+      <input
+        type="number"
+        id="product-price"
+        placeholder="Product Price"
+        class="input input-bordered w-full"
+      />
+
+      <div class="card-actions justify-end">
+        <button class="btn btn-primary" onclick="addToCart()">
+          Add To Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-<button onclick="showresult()">Show Result</button>
-
-<button onclick="saveToLocalStorage()">localStorage</button>
-
-    <h1>Add To Card</h1>
-
-    <input type="text" name="product name" placeholder="product name" id="product-name">
-    <br>
-    <input type="number" name="product price" placeholder="product price" id="product-price">
-    <br>
-    <button onclick="addToCart()">AddToCart</button>
 
 
    <script src="js/scripte.js"></script>
