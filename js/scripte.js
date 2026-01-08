@@ -24,5 +24,20 @@ const showresult = () => {
 /*when click the button value will be save the local storage*/
 
 const saveToLocalStorage=()=>{
-    localStorage.setItem("HighScore","96");
+    // localStorage.setItem("HighScore","96");
+
+    /*how will be show object in local storage*/
+
+    const student = {
+        name: "Mejba",
+        age: 22,
+        marks: 95
+    };
+
+    const convertedToString =JSON.stringify(student);
+    // console.log(convertedToString);
+    localStorage.setItem("Data",convertedToString);
+
 }
+
+
