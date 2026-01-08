@@ -40,4 +40,12 @@ const saveToLocalStorage=()=>{
 
 }
 
+/*how to bacl to object from local storage*/
+
+const add = localStorage.getItem("Data"); /*data is key name*/
+const backtoObject =JSON.parse(add);
+// console.log(backtoObject);
+console.log(backtoObject.name);
+console.log(backtoObject.age);
+console.log(backtoObject.marks);
 
